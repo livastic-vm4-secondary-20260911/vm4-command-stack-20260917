@@ -1,8 +1,0 @@
-merge_queue:
-  max_parallel_checks: 1
-queue_rules:
-  - name: default
-    batch_size: 1
-    queue_conditions: true
-    merge_conditions:
-      - label = vm4-never-merge-command-stack
