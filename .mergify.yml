@@ -1,0 +1,21 @@
+scopes:
+  source:
+    files:
+      docs:
+        include:
+          - "docs/**"
+      security:
+        include:
+          - "security/**"
+
+merge_queue:
+  queue_controls_comment: false
+
+queue_rules:
+  - name: vm4 stack review gate 240924
+    queue_conditions:
+      - "#approved-reviews-by >= 1"
+    merge_conditions:
+      - label = vm4-stack-never-merge-240924
+    merge_method: merge
+    batch_size: 2
