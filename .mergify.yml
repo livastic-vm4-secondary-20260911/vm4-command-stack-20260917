@@ -1,0 +1,7 @@
+pull_request_rules:
+  - name: vm4 bot-account permission freshness 240924
+    conditions:
+      - label = vm4-botacct-rebase-240924
+    actions:
+      rebase:
+        bot_account: "livastic-vm4-secondary-20260911"
