@@ -16,6 +16,8 @@ queue_rules:
     queue_conditions:
       - "#approved-reviews-by >= 1"
     merge_conditions:
-      - label = vm4-stack-never-merge-240924
+      - check-success = vm4-hold-check-240924
     merge_method: merge
     batch_size: 2
+    batch_max_wait_time: "5 minutes"
+    checks_timeout: null
