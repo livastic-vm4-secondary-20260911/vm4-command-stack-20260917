@@ -1,0 +1,9 @@
+pull_request_rules:
+  - name: vm4 review-thread pagination readonly title 240924
+    conditions:
+      - base = main
+      - "#review-threads-unresolved = 0"
+      - title = VM4 RT101 READONLY GO 240924
+    actions:
+      merge:
+        method: merge
