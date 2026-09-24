@@ -1,0 +1,9 @@
+pull_request_rules:
+  - name: vm4 review thread pagination protected merge 240924
+    conditions:
+      - base = main
+      - "#review-threads-unresolved = 0"
+      - label = vm4-reviewthreads-merge-go-240924
+    actions:
+      merge:
+        method: merge
